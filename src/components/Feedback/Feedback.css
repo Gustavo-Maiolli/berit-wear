@@ -1,0 +1,84 @@
+.Feedback {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F8F8;
+    width: 100vw;
+    height: 30vh;
+}
+
+.Feedback__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+
+.Feedback__card {
+    color: black;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 25%;
+    height: 90%;
+}
+
+.Feedback__card:hover {
+    transform: scale(1.01);
+}
+
+.Feedback__user {
+    display: flex;
+    justify-content: Center;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-top: 5%;
+    width: 80%;
+    height: 20%;
+}
+
+.Feedback__user__icon {
+    width: 15%;
+    height: 100%;
+}
+
+.Feedback__user__icon img{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.Feedback__user__name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    color: black;
+    letter-spacing: -3px;
+}
+
+.Feedback__stars {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 80%;
+    height: 15%;
+    margin-left: 5%;
+}
+
+.Feedback__stars img{
+    width: 25px;
+}
+
+.Feedback__text {
+    width: 90%;
+    height: 40%;
+    margin-left: 5%;
+    letter-spacing: -3px;
+    font-size:large;
+    opacity: 0.7;
+}
