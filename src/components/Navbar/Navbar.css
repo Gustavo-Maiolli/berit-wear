@@ -57,18 +57,18 @@
     height: 100%;
 }
 
-.navbar__icons div{
+.navbar__icons div {
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
-.navbar__icons img{
+.navbar__icons img {
    width: 50%;
    transition: 0.3s;
 }
 
-.navbar__icons img:hover{
+.navbar__icons img:hover {
    width: 48%;
    opacity: 0.5;
 }

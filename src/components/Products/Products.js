@@ -18,6 +18,7 @@ function Products(){
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
                         <img src="/imgs/berit-marca/we-24.jpg"></img>
+                        <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
                         <div className="Products__itens__content__text__title">
@@ -34,6 +35,7 @@ function Products(){
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
                         <img src="/imgs/berit/we-57.jpg"></img>
+                        <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
                         <div className="Products__itens__content__text__title">
@@ -50,6 +52,7 @@ function Products(){
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
                         <img src="/imgs/berit/we-87.jpg"></img>
+                        <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
                         <div className="Products__itens__content__text__title">
@@ -66,6 +69,7 @@ function Products(){
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
                         <img src="/imgs/berit/we-110.jpg"></img>
+                        <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
                         <div className="Products__itens__content__text__title">

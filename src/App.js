@@ -1,8 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Products from './components/Products/Products';
+import About from './components/About/About';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Navbar></Navbar>
         <Hero></Hero>
         <Products></Products>
+        <About></About>
       </header>
     </div>
   );
