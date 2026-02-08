@@ -10,7 +10,7 @@ function Hero(){
                 playsInline
                 className="video-bg"
             >
-            <source src="imgs/berit/Video-02.MP4"/>
+            <source src="imgs/berit/Video-01.MP4"/>
             </video>
             <div className="Hero__text">
                 <div className="Hero__upper__text">

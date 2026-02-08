@@ -1,0 +1,132 @@
+.Container-Products {
+    margin: 5vw 10vw;
+    width: 80vw;
+    height: 100vh;
+}
+
+.Products__text{
+    width: 100%;
+    height: 20%;
+}
+
+.Products__upper__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D62828;
+    font-size: calc(20% + 2vmin);
+    font-weight: 350;
+    width: 100%;
+    height: 20%;
+}
+
+.Products__mid__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 500;
+    width: 100%;
+    height: 60%;
+}
+
+.Products__lower__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10% + 2vmin);
+    letter-spacing: -3px;
+    font-weight: 300;
+    width: 100%;
+    height: 20%;
+    opacity: 0.75;
+}   
+
+.Products__itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.Products__itens__content{
+    background-color: #313131;
+    border: 0.5px solid #F8F8F8;
+    border-radius: 15px;
+    width: 20%;
+    height: 90%;
+    transition: 1s;
+}
+
+.Products__itens__content:hover{
+    border: 1px solid #7A0C12;
+    background-color: #353535;
+}
+
+.Products__itens__content__img{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+
+.Products__itens__content__img img{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.Products__itens__content__img img:hover{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 110%;
+    object-fit: cover; 
+}
+
+.Products__itens__content__text{
+    width: 100%;
+    height: 25%;
+}
+
+.Products__itens__content__text__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: calc(15% + 2vmin);
+    width: 100%;
+    height: 20%;
+
+}
+
+.Products__itens__content__text__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5%;
+    font-weight: 350;
+    font-size: calc(5% + 2vmin);
+    letter-spacing: -3px;
+    opacity: 0.7;
+    width: 100%;
+    height: 40%;
+}
+
+.Products__itens__content__text__value{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    font-size: calc(5% + 2vmin);
+    letter-spacing: -3px;
+    font-weight: 500;
+    color: #D62828;
+    width: 90%;
+    height: 30%;
+}
