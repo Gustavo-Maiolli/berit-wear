@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 100vw;
+    height: 10vh;
+}
+
+.navbar img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navbar__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 100%;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(15% + 2vmin);
+    margin: 30%;
+    width: 20%;
+    height: 100%;
+}
+
+.navbar__links div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.navbar__links a:hover {
+    cursor: pointer;
+    font-size: calc(12% + 2vmin);
+    opacity: 0.5;
+}
+
+.navbar__links a {
+    transition: 0.3s;
+}
+
+.navbar__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+    height: 100%;
+}
+
+.navbar__icons div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar__icons img{
+   width: 50%;
+   transition: 0.3s;
+}
+
+.navbar__icons img:hover{
+   width: 48%;
+   opacity: 0.5;
+}
+
+.navbar__icons__cart {
+    width: 50%;
+    height: 100%;
+}
+
+.navbar__icons__login {
+    width: 50%;
+    height: 100%;
+}
+
+.navbar__icons__login img{
+    border: 2px solid black;
+    border-radius: 50%;
+}
