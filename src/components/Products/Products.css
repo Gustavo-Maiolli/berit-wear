@@ -39,7 +39,6 @@
     font-weight: 300;
     width: 100%;
     height: 20%;
-    opacity: 0.75;
 }   
 
 .Products__itens {
@@ -97,13 +96,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.2s;
+    transition: 1s;
 }
 
 .Products__itens__content__img img:hover {
     border-radius: 15px 15px 0px 0px;
-    width: 100%;
-    height: 105%;
+    transform: scale(1.1);
     object-fit: cover; 
 }
 
