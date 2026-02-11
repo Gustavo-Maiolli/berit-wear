@@ -4,7 +4,7 @@ function Navbar(){
     return (
         <nav class="navbar">
             <div class="navbar__img">
-                <img src="/imgs/berit/berit-logo-02.png" alt="img navbar"/>
+                <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770832887/berit-logo-02_thnwbo.jpg" alt="img navbar"/>
             </div>
             <div class="navbar__links">
                 <div class="navbar__content__product">

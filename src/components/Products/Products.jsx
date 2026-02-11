@@ -17,7 +17,7 @@ function Products(){
             <div className="Products__itens">
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
-                        <img src="/imgs/berit-marca/we-24.jpg"></img>
+                        <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770833343/we-24_vejfpx.jpg"></img>
                         <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
@@ -34,7 +34,7 @@ function Products(){
                 </div>
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
-                        <img src="/imgs/berit/we-57.jpg"></img>
+                        <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770833343/we-24_vejfpx.jpg"></img>
                         <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
@@ -68,7 +68,7 @@ function Products(){
                 </div>
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
-                        <img src="/imgs/berit/we-110.jpg"></img>
+                        <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770833343/we-24_vejfpx.jpg"></img>
                         <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">

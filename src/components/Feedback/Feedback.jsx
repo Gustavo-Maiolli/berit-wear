@@ -7,7 +7,7 @@ function Feedback(){
                     <div className="Feedback__card">
                         <div className="Feedback__user">
                             <div className="Feedback__user__icon">
-                                <img src="imgs/berit/berit-logo.png"></img>
+                                <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770820241/berit-logo_fjqfl2.png"></img>
                             </div>
                             <div className="Feedback__user__name">
                                 <p>Bruno</p>

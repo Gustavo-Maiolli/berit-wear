@@ -61,7 +61,7 @@ function Footer(){
                     <div className='Footer__cards__links'>
                         <div className='Footer__cards__links__berit'>
                             <div className='Footer__cards__links__header'>
-                                <img src='imgs/berit/berit-text-black.png'></img>
+                                <img src='https://res.cloudinary.com/dohv3aakv/image/upload/v1770820242/berit-text-black_v6pngd.png'></img>
                             </div>  
                             <div className='Footer__cards__links__content'>
                                 <p>
