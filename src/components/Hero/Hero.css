@@ -124,3 +124,44 @@
     color: white;
     background-color: black;
 }
+
+@media (max-width: 768px) {
+    .video-container {
+        height: 60vh;
+    }
+
+    .Hero__text {
+        width: 90%;
+    }
+
+    .Hero__upper__text{
+        font-size: larger;
+        font-weight: 500;
+    }
+
+    .Hero__mid__text, 
+    .Hero__mid__text__content-01, 
+    .Hero__mid__text__content-02 {
+        font-size: 40px;
+    }
+
+    .Hero__lower__text {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .Hero__buttons {
+        gap: 10px;
+    }
+
+    .Hero__buttons__content-01, 
+    .Hero__buttons__content-02 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .Hero__buttons button {
+        width: 80%;
+        height: 30px;
+    }
+}
