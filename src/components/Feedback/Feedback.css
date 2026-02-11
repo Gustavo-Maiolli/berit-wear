@@ -82,3 +82,21 @@
     font-size:large;
     opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+    .Feedback {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .Feedback__container {
+        flex-direction: column;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .Feedback__card {
+        width: 100%;
+        height: auto;
+    }
+}
