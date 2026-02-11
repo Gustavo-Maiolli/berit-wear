@@ -276,3 +276,80 @@
     border-top: 1px solid #a1a1a1;
 }
 
+@media (max-width: 768px) {
+    .Footer {
+        height: auto;
+    }
+
+    .Container {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .Container__content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Container__content__maps, 
+    .Container__content__message {
+        width: 100%;
+    }
+
+    .Container__content__frete input{
+        width: 40%;
+    }
+
+    .Container__content__frete button{
+        width: 30%;
+    }
+
+    .Footer__cards {
+        height: auto;
+    }
+
+    .Footer__cards__icons {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .Footer__cards__icons__text {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Footer__cards__icons__social {
+        width: 50%;
+    }
+
+    .Footer__cards__links {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .Footer__cards__links__content {
+        font-size: large;
+    }
+
+    .Footer__cards__links__berit,
+    .Footer__cards__links__products,
+    .Footer__cards__links__anothers,
+    .Footer__cards__links__contact {
+        width: 80%;
+    }
+    
+    .Footer__cards__links__contact__content {
+        align-items: center;
+        font-size: larger;
+    }
+
+    .Footer__cards__copy {
+        text-align: center;
+    }
+}
