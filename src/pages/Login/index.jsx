@@ -7,11 +7,9 @@ export default function Login() {
       <div className="login-card">
         
         <div className="login-logo-wrapper">
-          <img
-            src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770832887/berit-logo-02_thnwbo.jpg"
-            className="login-logo"
-            alt="logo"
-          />
+            <Link to="/">
+                <img src="imgs/berit/berit-text-black.png"></img>
+            </Link>
         </div>
 
         <p className="login-brand">Berit Wear</p>
@@ -21,7 +19,6 @@ export default function Login() {
           Acesse sua conta para continuar
         </p>
 
-        {/* FORM ESTÁTICO */}
         <form>
           <div className="login-form-group">
             <label className="login-label" htmlFor="login-email">
