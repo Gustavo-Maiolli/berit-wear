@@ -1,23 +1,17 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Products from './components/Products/Products';
-import About from './components/About/About';
-import Feedback from './components/Feedback/Feedback';
-import Footer from './components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/index.jsx";
+import Singup from "./pages/Login/index.jsx";
+import Login from "./pages/Signup/index.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Navbar></Navbar>
-        <Hero></Hero>
-        <Products></Products>
-        <About></About>
-        <Feedback></Feedback>
-        <Footer></Footer>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/singup" element={<Singup />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

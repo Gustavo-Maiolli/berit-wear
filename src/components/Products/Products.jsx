@@ -51,7 +51,7 @@ function Products(){
                 </div>
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
-                        <img src="/imgs/berit/we-87.jpg"></img>
+                        <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770833343/we-24_vejfpx.jpg"></img>
                         <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
