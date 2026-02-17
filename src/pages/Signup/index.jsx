@@ -1,3 +1,3 @@
-export default function Contact() {
-  return <h1>Contato</h1>;
+export default function Singup() {
+  return <h1>TESTE</h1>;
 }

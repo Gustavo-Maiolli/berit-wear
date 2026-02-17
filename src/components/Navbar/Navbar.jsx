@@ -1,8 +1,9 @@
 import './Navbar.css'
+import { Link } from "react-router-dom";
 
 function Navbar(){
     return (
-        <nav class="navbar">
+        <nav className="navbar">
             <div class="navbar__img">
                 <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770832887/berit-logo-02_thnwbo.jpg" alt="img navbar"/>
             </div>
@@ -22,7 +23,9 @@ function Navbar(){
                     <img src="assets/cart-arrow-down-solid-full.svg"></img>
                 </div>
                 <div class="navbar__icons__login">
-                    <img src="assets/user-solid-full.svg"></img>
+                    <Link to="/login">
+                        <img src="assets/user-solid-full.svg"></img>
+                    </Link>
                 </div>
             </div>
         </nav>
