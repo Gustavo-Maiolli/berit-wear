@@ -19,6 +19,11 @@ function Navbar(){
                 <div class="navbar__content__mensage">
                     <a>Contato</a>
                 </div>
+                <div class="navbar__content__mensage">
+                    <Link to="/admin/vendas">
+                        <a> TESTE </a>
+                    </Link>
+                </div>
             </div>
             <div class="navbar__icons">
                 <div class="navbar__icons__cart">
