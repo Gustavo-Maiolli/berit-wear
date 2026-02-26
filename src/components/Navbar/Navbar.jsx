@@ -27,7 +27,9 @@ function Navbar(){
             </div>
             <div class="navbar__icons">
                 <div class="navbar__icons__cart">
-                    <img src="assets/cart-arrow-down-solid-full.svg"></img>
+                    <Link to="/cart">
+                        <img src="assets/cart-arrow-down-solid-full.svg"></img>
+                    </Link>
                 </div>
                 <div class="navbar__icons__login">
                     <Link to="/login">

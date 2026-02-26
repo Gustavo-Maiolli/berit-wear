@@ -45,13 +45,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: transparent;
     width: 100%;
     height: 80%;
 }
 
 .Products__itens__content {
-    background-color: #313131;
     border: 0.5px solid #F8F8F8;
+    background-color: transparent;
     border-radius: 15px;
     width: 20%;
     height: 90%;
@@ -60,7 +61,7 @@
 
 .Products__itens__content:hover {
     border: 1px solid #7A0C12;
-    background-color: #404040;
+    background-color: #222;
 }
 
 .Products__itens__content__img {
@@ -106,6 +107,7 @@
 }
 
 .Products__itens__content__text {
+    background-color: transparent;
     width: 100%;
     height: 25%;
 }

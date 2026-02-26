@@ -1,0 +1,214 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100vw;
+    height: 90vh;
+    background-color: #0b0b0b;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    height: 70vh;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.main__content__itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.main__content__itens__item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3.5%;
+    width: 100%;
+    height: 20%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.main__content__itens__item__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    border-right: 1px solid #444;
+}
+
+.main__content__itens__item__img img {
+    width: 90%;
+    height: 90%;
+}
+
+.main__content__itens__item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10% + 2vmin);
+    color: #f8f8f8;
+    width: 90%;
+    height: 100%;
+}
+
+.main__content__itens__item__info__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 30%;
+}
+
+.main__content__itens__item__info__description {
+    width: 95%;
+    height: 70%;
+    line-height: 1.2;
+}
+
+.main__content__itens__item__info__description__buttons {
+    margin-top: 1%;
+    background-color: transparent;
+    text-align: center;
+    width: 10%;
+    height: 2rem;
+    border: #444 1px solid;
+}
+
+.main__content__itens__item__info__description__buttons button{
+    background-color: transparent;
+    text-align: center;
+    color: #f8f8f8;
+    width: 35%;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.main__content__itens__item__info__description__buttons button:hover{
+    background-color: #D62828;
+    height: 1.8rem;
+}
+
+.main__content__summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444;
+    border-radius: 5px;
+    width: 30%;
+    height: 90%;
+    background-color: transparent;
+}
+
+.main__content__summary__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(20% + 3vmin);
+    letter-spacing: 1px;
+    color: #f8f8f8;
+    width: 90%;
+    height: 10%;
+    border-block-end: 1px solid #444;
+}
+
+.main__content__summary__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10% + 2vmin);
+    line-height: 1.5;
+    color: #f8f8f8;
+    margin: 2%;
+    width: 90%;
+    height: 30%;
+    border-block-end: 1px solid #444;
+}
+
+.main__content__summary__subtitle__left {
+    color: #f8f8f8;
+    width: 40%;
+    height: 100%;
+    border-block-end: 1px solid #444;
+}
+
+.main__content__summary__subtitle__right {
+    text-align: end;
+    width: 40%;
+    height: 100%;
+    border-block-end: 1px solid #444;
+}
+
+.main__content__summary__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 40%;
+    border-block-end: 1px solid #444;
+}
+
+.main__content__summary__buttons button {
+    width: 80%;
+    height: 20%;
+    margin: 5%;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #D62828;
+    color: #f8f8f8;
+    font-size: calc(10% + 2vmin);
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.main__content__summary__buttons button:hover {
+    opacity: 0.8;
+}
+
+.main__content__summary__cupon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    border-block-end: 1px solid #444;
+}
+
+.main__content__summary__cupon input{
+    background-color: transparent;
+    text-align: center;
+    width: 60%;
+    height: 2rem;
+    color: #f8f8f8;
+    border: 1px solid #444;
+}
+
+.main__content__summary__cupon button{
+    background-color: transparent;
+    width: 20%;
+    height: 2.2rem;
+    color: #f8f8f8;
+    border: 1px solid #444;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.main__content__summary__cupon button:hover{
+    background-color: #222;
+}

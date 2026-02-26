@@ -1,3 +1,4 @@
+import { Link, useLocation } from "react-router-dom";
 import './Products.css'
 
 function Products(){
@@ -17,7 +18,9 @@ function Products(){
             <div className="Products__itens">
                 <div className="Products__itens__content">
                     <div className="Products__itens__content__img">
-                        <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770833343/we-24_vejfpx.jpg"></img>
+                        <Link to="/produtos">
+                            <img src="https://res.cloudinary.com/dohv3aakv/image/upload/v1770833343/we-24_vejfpx.jpg"></img>
+                        </Link>
                         <button>Ver mais</button>
                     </div>
                     <div className="Products__itens__content__text">
