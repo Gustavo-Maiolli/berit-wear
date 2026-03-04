@@ -1,7 +1,33 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
+import API_BASE_URL from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
+
+  function linkToHome() {
+    navigate("/");
+  }
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  async function handleLogin() {
+    try {
+      const response = await API_BASE_URL.post('/users/login', {
+        email,
+        password
+      });
+
+      alert(response.data.message);
+      linkToHome();
+
+    } catch (error) {
+      alert(error.response?.data?.error || 'Aqui');
+    }
+  }
+
   return (
     <div className="login-container">
       <div className="login-card">
@@ -29,6 +55,7 @@ export default function Login() {
               className="login-input"
               type="email"
               placeholder="seu@email.com"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
@@ -41,6 +68,7 @@ export default function Login() {
               className="login-input"
               type="password"
               placeholder="••••••••"
+              onChange={(e) => setPassword(e.target.value)}
             />
             <button
               type="button"
@@ -50,7 +78,7 @@ export default function Login() {
             </button>
           </div>
 
-          <button type="button" className="login-btn">
+          <button type="button" className="login-btn" onClick={handleLogin}>
             Entrar
           </button>
         </form>

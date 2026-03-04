@@ -1,7 +1,67 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 
 export default function Signup() {
+
+  const [name, setName] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    const fullName = `${name} ${lastname}`.trim();
+
+    if (!fullName || !email || !password || !confirmPassword) {
+      return alert("Preencha todos os campos!");
+    }
+
+    if (password !== confirmPassword) {
+      return alert("As senhas não coincidem");
+    }
+
+    if (password.length < 8) {
+      return alert("A senha deve ter pelo menos 8 caracteres");
+    }
+
+    const userData = {
+      name: fullName,
+      email,
+      userType,
+      password
+    };
+
+    console.log("Dados enviados:", userData);
+
+    async function cadastrar(userData) {
+    try {
+        const response = await fetch('https://tcc-backend-xifx.onrender.com/register-client', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+            body: JSON.stringify(userData)
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            showMessage('Cliente cadastrado com sucesso! Redirecionando...', 'success');
+            document.getElementById('register-form').reset();
+            selectUserType('');
+            setTimeout(() => (window.location.href = '/'), 2000);
+        } else {
+            showMessage(data.error || data.message || 'Erro ao cadastrar cliente', 'error');
+        }
+    } catch (err) {
+        console.error(err);
+        showMessage('Erro de conexão com o servidor', 'error');
+    }
+  }
+}
+
   return (
     <div className="signup-container">
       <div className="signup-card">
@@ -13,7 +73,7 @@ export default function Signup() {
         <h1 className="signup-title">Criar conta</h1>
         <p className="signup-subtitle">Preencha os campos para se cadastrar</p>
 
-        <form noValidate>
+        <form noValidate onSubmit={handleSubmit}>
           <div className="signup-form-row">
             <div className="signup-form-group">
               <label className="signup-label" htmlFor="signup-name">Nome</label>
@@ -22,6 +82,8 @@ export default function Signup() {
                 className="signup-input"
                 type="text"
                 placeholder="João"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
 
@@ -32,6 +94,8 @@ export default function Signup() {
                 className="signup-input"
                 type="text"
                 placeholder="Silva"
+                value={lastname}
+                onChange={(e) => setLastname(e.target.value)}
               />
             </div>
           </div>
@@ -43,6 +107,8 @@ export default function Signup() {
               className="signup-input"
               type="email"
               placeholder="seu@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
@@ -53,6 +119,8 @@ export default function Signup() {
               className="signup-input"
               type="password"
               placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
 
@@ -63,6 +131,8 @@ export default function Signup() {
               className="signup-input"
               type="password"
               placeholder="••••••••"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </div>
 
