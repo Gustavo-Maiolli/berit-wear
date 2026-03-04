@@ -1,9 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Signup.css";
+import API_BASE_URL from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup() {
+  const navigate = useNavigate();
 
+  function linkToLogin() {
+    navigate("/login");
+  }
   const [name, setName] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
@@ -27,40 +33,21 @@ export default function Signup() {
       return alert("A senha deve ter pelo menos 8 caracteres");
     }
 
-    const userData = {
-      name: fullName,
-      email,
-      userType,
-      password
-    };
 
-    console.log("Dados enviados:", userData);
-
-    async function cadastrar(userData) {
     try {
-        const response = await fetch('https://tcc-backend-xifx.onrender.com/register-client', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            credentials: 'include',
-            body: JSON.stringify(userData)
-        });
+      const userData = await API_BASE_URL.post('/users/signup', {
+        name: fullName,
+        email,
+        password
+      });
 
-        const data = await response.json();
+      alert(userData.data.message);
+      linkToLogin();
 
-        if (response.ok) {
-            showMessage('Cliente cadastrado com sucesso! Redirecionando...', 'success');
-            document.getElementById('register-form').reset();
-            selectUserType('');
-            setTimeout(() => (window.location.href = '/'), 2000);
-        } else {
-            showMessage(data.error || data.message || 'Erro ao cadastrar cliente', 'error');
-        }
-    } catch (err) {
-        console.error(err);
-        showMessage('Erro de conexão com o servidor', 'error');
+    } catch (error) {
+      alert(error.response?.data?.error || 'Erro ao criar conta');
     }
   }
-}
 
   return (
     <div className="signup-container">
